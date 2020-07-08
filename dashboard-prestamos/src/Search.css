@@ -1,0 +1,36 @@
+.container {
+    margin: 5% auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.heading {
+    font-size: xx-large;
+    padding: 5% 0%;
+    color: rgb(26, 8, 70);
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.label {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-label {
+    position: relative;
+}
+
+.container input {
+    width: 100%;
+    font-size: larger;
+    color:  rgb(26, 8, 70);
+    box-sizing: border-box;
+    outline: none;
+}
+
+.search.icon {
+    position: absolute;
+    top: -5%;
+
+}

@@ -1,18 +1,16 @@
 import React from 'react';
-import Client from './components/Client';
-import Navbar from './components/Navbar';
+//import Client from './components/Client';
+//import Navbar from './components/Navbar';
+import Search from './components/SearchBar'
 //import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-        <div className="container mt-5">
-          <div className="row">
-            <Client />
-          </div>
-        </div>
+
+      <Search />
+
     </div>
   );
 }

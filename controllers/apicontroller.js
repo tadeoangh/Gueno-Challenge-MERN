@@ -42,6 +42,7 @@ const controller = {
                 dmy: ${dmy}
                 fecha formateada: ${fecha_formateada}
                 `)*/
+                console.log("A request has been made")
                 res.json({
                     "fullname" : data.name + " " + data.surname,
                     "birthday" : fecha_formateada,
