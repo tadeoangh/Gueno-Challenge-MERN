@@ -49,7 +49,7 @@ const controller = {
                 })
             } else {
                 res.json({
-                    "message": "El ID no existe"
+                    "message": "El ID no existe. Compruebe que los datos ingresados sean correctos."
                 })
             }
             })

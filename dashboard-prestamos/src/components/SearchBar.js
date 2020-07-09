@@ -115,7 +115,7 @@ class Search extends Component {
                     </div>
                 </div>
             )
-        } else if (result.message === "El ID no existe") {
+        } else if (result.message === "El ID no existe. Compruebe que los datos ingresados sean correctos.") {
             return(
                 <div className="container">
     
