@@ -4,6 +4,10 @@
     max-width: 960px;
 }
 
+.p {
+    text-align: center;
+}
+
 .heading {
     font-size: xx-large;
     padding: 5% 0%;
