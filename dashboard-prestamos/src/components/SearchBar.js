@@ -29,13 +29,10 @@ class Search extends Component {
 
         const url = `http://localhost:3001/${id}`
 
-        console.log("yendo");
-
         Axios.get( url )
         .then(
             
             (res) => {
-                console.log(res)
                 this.setState({
                     result: res.data,
                     isLoading: false
@@ -84,8 +81,14 @@ class Search extends Component {
                 </div>
             )
         } else if (error) {
-            return <div>Ha ocurrido un error: {error.message}</div>;
-        } else if (!result || result.data === "Hello. Welcome") {
+            return (
+                <div className="container" >
+                    <h2 className="heading" >¡UPS! ALGO SALIÓ MAL</h2>
+                    <h4>Ha ocurrido un error: {error.message}</h4>
+                    <p>Estamos trabajando para resolverlo...</p>
+                </div>
+            );
+        } else if (!result) {
             return(
                 <div className="container">
     
@@ -109,6 +112,33 @@ class Search extends Component {
     
                     <div>
                         <p>Bienvenid@</p>
+                    </div>
+                </div>
+            )
+        } else if (result.message === "El ID no existe") {
+            return(
+                <div className="container">
+    
+                    <h2 className="heading"> Préstamos González </h2>
+    
+                    <form className="form" >
+
+                        <div className="input-group mb-3">
+                        <input 
+                            type="text"
+                            className="form-control"
+                            id="search-input"
+                            placeholder="Ingrese el DNI sin puntos ni espacios"
+                        />
+                        <button className="button btn btn-light" onClick={this.fetchResults}>
+                        <i className="fas fa-search search-icon" />
+                        </button>
+                        </div>
+                    
+                    </form>
+    
+                    <div>
+                        <p>{result.message}</p>
                     </div>
                 </div>
             )
