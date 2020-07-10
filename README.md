@@ -14,11 +14,19 @@ _by Tadeo Angheben Martin_
 3. Ingresa el siguiente comando:
 
 ```
+  npm i
+```
+
+Esto instalará todas las dependencias y librerías que utiliza nuestra app. (Puede llevar un rato)
+
+4. Luego:
+
+```
   npm start
 ```
 Esto permitirá que el backend de nuestra app esté escuchando nuestros pedidos.
 
-4. Abre nuevamente la carpeta en otra consola (__Sin cerrar la que ya tienes abierta!__) e ingresa los siguientes comandos:
+5. Abre nuevamente la carpeta en otra consola (__Sin cerrar la que ya tienes abierta!__) e ingresa los siguientes comandos:
 
 ```
   cd dashboard-prestamos/
