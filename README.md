@@ -45,5 +45,5 @@ Esto permitirá que el backend de nuestra app esté escuchando nuestros pedidos.
 
 El proyecto fue desarrollado en el marco de una prueba para la empresa [Güeno](https://gueno.com/). El desafío consistía en desarrollar una app cuyo Backend funcionase con **Express de NodeJS** y su Frontend con **React**.
 <p>La funcionalidad de la app es la de permitir a un cliente, en este caso una aseguradora, tener acceso a la información de sus clientes a través del ingreso de su ID. Esta app, entonces, ingresará esa información en la url del servidor montado por Express, utilizado para buscar la información.</p>
-__Por ejemplo:__
-Si el ID ingresado es 11111111 entonces, la url será 'http://localhost:3001/11111111'
+
+__Por ejemplo:__ Si el ID ingresado es 11111111 entonces, la url será 'http://localhost:3001/11111111'
