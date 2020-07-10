@@ -1,8 +1,9 @@
 # Gueno-Challenge-MERN
  Coding Challenge for Güeno using the MERN stack
- _by Tadeo Angheben Martin
 
- __Node.JS version: 12.18.2 LTS
+_by Tadeo Angheben Martin_
+
+ __Node.JS version: 12.18.2 LTS__
 
 ## Quick Start
 
