@@ -44,10 +44,10 @@ Esto permitirá que el backend de nuestra app esté escuchando nuestros pedidos.
 ## Acerca del proyecto:
 
 El proyecto fue desarrollado en el marco de una prueba para la empresa [Güeno](https://gueno.com/). El desafío consistía en desarrollar una app cuyo Backend funcionase con **Express de NodeJS** y su Frontend con **React**.
-<p>La funcionalidad de la app es la de permitir a un cliente, en este caso una aseguradora, tener acceso a la información de sus clientes a través del ingreso de su ID. Esta app, entonces, ingresará esa información en la url del servidor montado por Express, utilizado para buscar la información.</p>
+La funcionalidad de la app es la de permitir a un cliente, en este caso una aseguradora, tener acceso a la información de sus clientes a través del ingreso de su ID. Esta app, entonces, ingresará esa información en la url del servidor montado por Express, utilizado para buscar la información.
 
-<p>__Por ejemplo:__ Si el ID ingresado es 11111111 entonces, la url será 'http://localhost:3001/11111111'<p/>
+__Por ejemplo:__ Si el ID ingresado es 11111111 entonces, la url será 'http://localhost:3001/11111111'
 
-<p>De este modo, se realiza un _fetch_ con la librería de Axios(_get(url)_) para evitar tener que transformar la información a formato JSON. Este fetch va a la sección del Backend, donde Express se encargará de procesar la información requerida. La app de Express reliza un _fetch_ en la API de Güeno a partir de la cual se obtiene el CUIT perteneciente al ID indicado. Si la información ingresada no coincide con un cliente existente entonces directamente se devuelve un mensaje diciendo que no hay un cliente con ese ID y que se debe revisar la información ingresada. En caso de encontrarse un CUIT se utilizará para hacer un segundo _fetch_ y obtener definitivamente la información requerida.<p/>
+De este modo, se realiza un _fetch_ con la librería de Axios(_get(url)_) para evitar tener que transformar la información a formato JSON. Este fetch va a la sección del Backend, donde Express se encargará de procesar la información requerida. La app de Express reliza un _fetch_ en la API de Güeno a partir de la cual se obtiene el CUIT perteneciente al ID indicado. Si la información ingresada no coincide con un cliente existente entonces directamente se devuelve un mensaje diciendo que no hay un cliente con ese ID y que se debe revisar la información ingresada. En caso de encontrarse un CUIT se utilizará para hacer un segundo _fetch_ y obtener definitivamente la información requerida.
 
-<p>La misma será procesada por la app y se devolverá en un formato legible y sencillo para que el front de React lo disponga en pantalla de manera sencilla.<p/>
+La misma será procesada por la app y se devolverá en un formato legible y sencillo para que el front de React lo disponga en pantalla de manera sencilla.
